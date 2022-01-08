@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haukai Restaurant</title>
+    <script src="https://kit.fontawesome.com/12d69638a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main header used across all the pages of the website. -->
+    <section class="header">
+        <nav class="navbar">
+            <div class="navbar-box">
+                <h1 class="heading-main"><a href="#">Haukai Restaurant</a></h1>
+            </div> 
+                <!-- Main Top Navigation used across all the pages of the website.  -->
+                <ul class="nav-list" id="myTopnav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#hours" class="nav-link">Hours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reservation" class="nav-link-book">Reservations</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <!--Social Media icons with links used across all the pages of the website.  -->
+                <div class="header-social-links">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+        </nav>      
+    </section>
+
+        <!--  Home Page Main Content Section  -->
+        <div class="header-container">
+            <div class="video">
+                <video loop muted autoplay id="video">
+                    <source src="images/restaurant_video.mp4" type="video/mp4">
+                        This file type is not supported
+                </video>
+            </div>  
+            <div class="header-box">
+                <h2 class="heading-secondary">
+                    Kia ora<br><span id="restaurant">Haukai Restaurant</span><br>Welcomes you
+                </h2>
+                <p class="lead">Experience M&atilde;ori kai and culture</p>
+                <a href="#reservation" class="reservation">Reserve a Table</a>    
+            </div>
+        </div>
+
+    <!-- Menu Section Starts-->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="menu-heading">Menu</div>
+            <div class="row">
+                <div class="menu-tabs">
+                    <button type="button" class="menu-tab-item active" data-target="#appetizers">appetizers</button>
+                    <button type="button" class="menu-tab-item" data-target="#main">main</button>
+                    <button type="button" class="menu-tab-item" data-target="#dessert">dessert</button>
+                    <button type="button" class="menu-tab-item" data-target="#beverages">beverages</button>
+                </div>
+                <div class="row menu-tab-content active" id="appetizers" >
+                    <div class="menu-item">
+                        <h2 class="menu-title">Rewena Bread</h2>
+                        <p class="menu-p">Traditional M&atilde;ori bread.</p>
+                        <h3 class="price">$10</h3>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-title">Paua Fritter</h2>
+                        <p class="menu-p">Finely diced pieces of paua, served with a side salad and horopito dressing.</p>
+                        <h3 class="price">$16</h3>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-title">Raw Fish</h2>
+                        <p class="menu-p">Dried snapper fish marinated in coconut cream, served with tomatoes and spring onions.</p>
+                        <h3 class="price">$20</h3>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-title">Poached Salmon</h2>
+                        <p class="menu-p">Salmon poaced in an orange and pistachio glaze, served with rewena bread.</p>
+                        <h3 class="price">$22</h3>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-title">Seafood Basket</h2>
+                        <p class="menu-p">Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns.</p>
+                        <h3 class="price">$25</h3>
+                    </div>
+                </div>
+                <div class="row menu-tab-content" id="main" >
+                    <div class="menu-item">
+                        <h2 class="menu-title">Fish of the Day</h2>
+                        <p class="menu-p">Beer battered fish and kumara fries, served with a side salad and homemade tartare.</p>
+                        <h3 class="price">$25</h3>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-title">Mussels and Scallops</h2>
+                        <p class="menu-p">Steamed mussel & scallop mousse, honey and soy broth.</p>
+                        <h3 class="price">$25</h3>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-title">Seafood Chowder</h2>
+                        <p class="menu-p">Creamy chowder filled with terakihi, prawn, hoki, scallops and mussels, served with flatbread.</p>
+                        <h3 class="price">$30</h3>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-title">Pork Belly</h2>
+                        <p class="menu-p">Slow cooked pork belly served on a bed of apple slaw with roasted kumara, and crispy noodle.</p>
+                        <h3 class="price">$30</h3>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-title">Lamb Steak</h2>
+                        <p class="menu-p">New Zealand Lamb coated in a kawakawa crumb, served with Dijon mustard glazed carrots, roasted butternut squash and a mushroom Jus.</p>
+                        <h3 class="price">$33</h3>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-title">Venison</h2>
+                        <p class="menu-p">Venison crusted with horopito, served with glazed plums, cabbage salad and red wine Jus.</p>
+                        <h3 class="price">$33</h3>
+                    </div>
+                </div>
+                <div class="row menu-tab-content" id="dessert" >
+                    <div class="menu-item">
+                        <h2 class="menu-title">K&atilde;piti Ice Cream</h2>
+                        <p class="menu-p">Check for daily specials.</p>
+                        <h3 class="price">$10</h3>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-title">Steam Pudding</h2>
+                        <p class="menu-p">Golden syrup flavoured steam pudding, served with vanilla ice cream.</p>
+                        <h3 class="price">$12</h3>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-title">Mini Pavlova</h2>
+                        <p class="menu-p">Mini Pavlova served with kawakawa and lemon infused cream and fresh fruit.</p>
+                        <h3 class="price">$16</h3>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-title">Banoffee Pie</h2>
+                        <p class="menu-p">Toffee, fresh bananas and fresh cream.</p>
+                        <h3 class="price">$16</h3>
+                    </div>
+                </div>
+                <div class="row menu-tab-content" id="beverages" >
+                    <div class="drinks-heading">
+                        <h2 class="drinks-title">Red</h2>
+                        <h2 class="drinks-quantity">B&nbsp;&nbsp;/&nbsp;G</h2>
+                    </div>
+                        <div class="drinks-item">
+                            <p class="drinks-p">Terrace Edge Pinot Noir, 2012, Wairarapa</p>
+                            <p class="drinks-price">$53 / $13</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Altitude Pinot Noir, 2010, Marlborough</p>
+                            <p class="drinks-price">$64 / $15</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Greystone Pinot Noir, 2012, Wairarapa</p>
+                            <p class="drinks-price">$73 / $17</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Terrace Edge Syrah, 2012, Wairarapa</p>
+                            <p class="drinks-price">$53 / $13</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Altitude Syrah, 2010, Marlborough</p>
+                            <p class="drinks-price">$64 / $15</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Greystone Syrah, 2012, Wairarapa</p>
+                            <p class="drinks-price">$73 / $17</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Pegasus Bay Merlot, 2013, Waipara</p>
+                            <p class="drinks-price">$65 / $14</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Pegasus Bay Pinot Noir, 2013, Waipara</p>
+                            <p class="drinks-price">$110 &nbsp;&nbsp;&nbsp;</p>
+                        </div>
+
+                    <div class="drinks-heading">
+                        <h2 class="drinks-title">White</h2>
+                    </div>
+                        <div class="drinks-item">
+                            <p class="drinks-p">Spade Oak Pinot Gris, 2011, Gisborne</p>
+                            <p class="drinks-price">$40 / $10</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Maude Pinot Gris, 2017, Otago</p>
+                            <p class="drinks-price">$49.50 / $11</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Charles Wiffen Chardonnay, 2013, Otago</p>
+                            <p class="drinks-price">$48 / $11</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Amisfield Riesling, 2016, Otago</p>
+                            <p class="drinks-price">$53 / $12</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Lamont Riesling, 2010, Otago</p>
+                            <p class="drinks-price">$57 / $13</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Elephant Hill Viognier, 2013, Hawkes Bay</p>
+                            <p class="drinks-price">$55 / $12</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Folium Sauvignon Blanc, 2011, Marlborough</p>
+                            <p class="drinks-price">$52 / $11</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Billecart-Salmon Brut Reserve, France</p>
+                            <p class="drinks-price">$120 &nbsp;&nbsp;&nbsp;</p>
+                        </div>
+                    <div class="drinks-heading">
+                        <h2 class="drinks-title">Beer and Cider</h2>
+                    </div>
+                        <div class="drinks-item">
+                            <p class="drinks-p">Garage project range</p>
+                            <p class="drinks-price">$11</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Tuatara range</p>
+                            <p class="drinks-price">$11</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Panhead range</p>
+                            <p class="drinks-price">$10</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Coopers Ale</p>
+                            <p class="drinks-price">$10</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Heineken</p>
+                            <p class="drinks-price">$11</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Moa Cider</p>
+                            <p class="drinks-price">$10</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Crooked Cider</p>
+                            <p class="drinks-price">$10</p>
+                        </div>
+                    <div class="drinks-heading">
+                        <h2 class="drinks-title">Non-alcholic</h2>
+                    </div>
+                        <div class="drinks-item">
+                            <p class="drinks-p">Mineral water</p>
+                            <p class="drinks-price">$4.00</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Soft drinks</p>
+                            <p class="drinks-price">$4.00</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Juice</p>
+                            <p class="drinks-price">$4.00</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Coffee</p>
+                            <p class="drinks-price">$4.50</p>
+                        </div>
+
+                        <div class="drinks-item">
+                            <p class="drinks-p">Tea</p>
+                            <p class="drinks-price">$3.50</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Menu Section Ends -->
+
+    <!-- Hours Section Starts -->
+    <section class="hours" id=hours>
+       <h1 class="hours-heading">Opening Hours</h1>
+            <div class="hours-content">
+                <div class="hours-left">
+                    <h2 class="calendar-title">Opening Hours Calendar</h2>
+                    <div class="calendar">
+                        <iframe class="responsive-iframe" src="https://calendar.google.com/calendar/embed?height=500&wkst=2&bgcolor=%23da6b1d&ctz=Pacific%2FAuckland&title=Haukai%20Restaurant%20Reservations&mode=WEEK&hl=en_GB&showCalendars=0&showTitle=0&src=OXM0c3ZuMHZ2NHNxazlxOTJkZzQya2dlNzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%230B8043" style="border-width:0" width="700" height="500" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+                <div class="hours-right">
+                    <h3 class="hours-title">Opening Times</h3>
+                        <div class="hours-info">
+                            <p class="days">Monday</p>
+                            <p class="times">Closed</p>
+                        </div>
+                        <div class="hours-info">
+                            <p class="days">Tuesday</p>
+                            <p class="times">Closed</p>
+                        </div>
+                        <div class="hours-info">
+                            <p class="days">Wednesday</p>
+                            <p class="times">5:00pm - 10:30pm</p>
+                        </div>
+                        <div class="hours-info">
+                            <p class="days">Thursday</p>
+                            <p class="times">5:00pm - 10:30pm</p>
+                        </div>
+                        <div class="hours-info">
+                            <p class="days">Friday</p>
+                            <p class="times">5:00pm - 10:30pm</p>
+                        </div>
+                        <div class="hours-info">
+                            <p class="days">Saturday</p>
+                            <p class="times">5:00pm - 10:30pm</p>
+                        </div>
+                        <div class="hours-info">
+                            <p class="days">Sunday</p>
+                            <p class="times">5:00pm - 10:30pm</p>
+                        </div>
+                </div>
+            </div>
+    </section>
+    <!-- Hours Section Ends- -->
+        
+    <!-- Contact Section Starts-->
+    <section class="contact" id="contact">
+        <div class="contact-title">Contact Us</div>
+         <div class="contact-content">
+            <div class="contact-left">
+                <div class="contact-info">
+                    <h2 class="maps-title">Find Us on Google Maps</h2>
+                </div>
+                    <div class="map">
+                        <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104310.34225487612!2d173.89301215760293!3d-35.21398583212839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bb73e31b0728b%3A0x500ef6143a2d500!2sKerikeri!5e0!3m2!1sen!2snz!4v1640847077360!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>   
+                    <div class="address">
+                        <p>1 Island Street<br>Kerikeri<br>Bay of Islands</p>
+                        <i class="fas fa-phone"></i> 09 401 4019
+                    </div>
+            </div>
+            <div class="contact-right">
+                <div class="contact-form">
+                    <form id="contact-us" class="form" method="post" action="contact-form-handler.php">
+                        <h1 class="contact-heading">Contact Us</h1>
+                            <div class="form-group">
+                                <input type="text" class="input" id="name" placeholder="Name" required>
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="input" id="email" placeholder="Email" required>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="input" id="textarea" placeholder="Message" required></textarea>
+                                <label for="textarea">Message</label>
+                            </div>
+                            <input type="submit" class="contact-btn" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section Ends -->
+    
+    <!-- Reservation Section Starts-->
+    <section class="reservation" id="reservation">
+        <h1 class="reservation-heading">Reserve a Table</h1>
+        <div class="reservation-form">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdACVdrwynYLEhjO-hWsuFhfPvMzATGg-w_0XDUeYOvdvyVig/viewform?embedded=true" width="640" height="1896" frameborder="0" marginheight="0" marginwidth="0" onload="window.parent.scrollTo(1000,4500)"></iframe>
+        </div>
+    </section>
+    <!-- Reservation Section Ends -->
+  
+    <!-- Main footer used across all the pages of the website.  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-item">
+                    <h3>our location</h3>
+                    <p>1 Island Street <br> Kerikeri <br> Bay of Islands <br> New Zealand</p>
+                </div>
+                <div class="footer-item">
+                    <h3>opening hours</h3>
+                    <p>Wednesday to Sunday <br>5:00pm - 10:30pm <br> Monday & Tuesday <br> Closed</p>
+                </div>
+                <div class="footer-item">
+                    <h3>contact us</h3>
+                    <p>09 401 4019</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-row">
+                    <div class="copyright">
+                        &copy; 2022 - Haukai Restaurant. All rights reserved.
+                    </div>
+                    <div class="policy">
+                        <button id="policy-btn">Privacy Policy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section Ends  -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1 class="policy-title">Privacy Policy</h1>
+            <div class="modal-item">
+                <h3 class="modal-heading">Information</h3>
+                <p class="modal-p">We collect personal information from you, including information about your: <br>
+                    <br>> Name <br> > Contact Information <br> > Location <br> > Computer or Network <br> > Interactions with us 
+                </p>
+            </div>
+            <div class="modal-item">
+                <h3 class="modal-heading">Collection</h3>
+                <p class="modal-p">We collect this personal information by asking people directly and by using website cookies. Note that a warning will appear to check that you understand the implications of collecting other information. In this case, analytics are well understood and common case.</p>
+            </div>
+            <div class="modal-item">
+                <h3 class="modal-heading">Purpose</h3>
+                <p class="modal-p">We collect your personal information in order to make reservations and contact guests in the case of a cancellation or change in booking.  We also collect analytical information about how the website is used to allow us to improve user experience.</p> 
+                    
+            </div>
+            <div class="modal-item">
+                <h3 class="modal-heading">Sharing</h3>
+                <p class="modal-p">We do not share any personal information with third-parties.</p>
+            </div>
+            <div class="modal-item">
+                <h3 class="modal-heading">Contact</h3>
+                <p class="modal-p">You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong. If you would like to ask for a copy of your information, or to have it corrected, please contact us at info@haukairestaurant.co.nz, or 09 401 4019, or 1 Island Street, Kerikeri, Bay of Islands, New Zealand.</p>
+            </div>
+            <div class="modal-item">
+                <h3 class="modal-heading">Optional Info</h3>
+                <p class="modal-p">Providing some information is optional. If you choose not to enter personal or contact information, we'll be unable to make a reservation or change or cancel a reservation.</p>
+            </div>
+        </div>
+    </div>
+    
+<script src="js/scripts.js"></script>
+</body>
+</html>
