@@ -395,7 +395,7 @@ iframe {
 
 /* Contact Section Starts */
 .contact {
-    background-image: url("../images/whitebackground.jpg");
+    background-color: white;
     background-size: cover;
     padding: 15rem 10rem;
     width: 100%;
