@@ -108,7 +108,18 @@ iframe {
     transition: all .4s ease;
 }
 
-.nav-link-book:hover {
+.nav-link-staff:visited,
+.nav-link-staff:link {
+    margin-left:30px;
+    color: white;
+    padding: 3rem 3.5rem;
+    text-decoration: underline;
+    text-shadow: 0 .3rem 1rem rgba(255, 255, 255, .5);
+    transition: all .4s ease;
+}
+
+.nav-link-book:hover,
+.nav-link-staff:hover {
     color: white;
     background-color: #da6b1d;
 }
@@ -849,12 +860,12 @@ iframe {
         transition: 0.3s;
     }
 
-    .nav-link, .nav-link-book {
+    .nav-link, .nav-link-book, .nav-link-staff {
         width: 100%;
         flex-direction: column;
     }
 
-    .nav-link:link, .nav-link-book:link {
+    .nav-link:link, .nav-link-book:link, .nav-link-staff:link {
         padding: .5rem 1rem;
     }
 
@@ -866,14 +877,19 @@ iframe {
         left: 0;
     }
 
-    .nav-link-book:link {
+    .nav-link-book:link, .nav-link-staff:link {
         border: none;
         box-shadow: none;
         border-radius: 0; 
         text-shadow: none;
     }
+
+    .nav-link-staff:link {
+        margin-left: 0;
+        text-decoration: none;
+    }
     
-    .nav-link-book:link:hover {
+    .nav-link-book:link:hover, .nav-link-staff:link:hover {
         border-radius: 0;
     }
 
