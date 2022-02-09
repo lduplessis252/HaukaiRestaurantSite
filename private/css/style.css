@@ -1,0 +1,23 @@
+html body {
+    font-family: "poppins", sans-serif;
+    padding: 3%;
+}
+
+h1, h2 {
+    color: #da6b1d;
+}
+
+.nav-link:link {
+    border: 1px solid white;
+    background-color: #da6b1d;
+}
+
+.nav-link:link:hover {
+    background-color: black;
+}
+
+.navbar .container-fluid {
+    padding: 0;
+}
+
+
